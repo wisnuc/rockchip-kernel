@@ -18,7 +18,8 @@ if [ ! -d $BUILD_DIR ]; then
 fi
 
 cp ${CONFIG_DIR}/rockchip_linux_defconfig ${BUILD_DIR}/arch/arm64/configs/rockchip_linux_defconfig
-cp ${CONFIG_DIR}/rk3328-rock64.dts ${BUILD_DIR}/arch/arm64/boot/dts
+cp ${CONFIG_DIR}/rk3328.dtsi ${BUILD_DIR}/arch/arm64/boot/dts/rockchip
+cp ${CONFIG_DIR}/rk3328-rock64.dts ${BUILD_DIR}/arch/arm64/boot/dts/rockchip
 
 cd $BUILD_DIR
 
