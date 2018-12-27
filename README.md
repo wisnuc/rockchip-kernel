@@ -33,4 +33,8 @@ linux-libc-dev-${tag_name}-arm64.deb
 
 beta release should sete pre-release to true.
 
+**format**
 
+Notiing that the standard deb-pkg generates a gzip compressed kernel, aka, vmlinuz, the u-boot requires an uncompressed kernel.
+
+If you install this kernel in a client system, you need to gunzip the vmlinuz file manually. Also, Image, Initrd, and dtb should be linked.
